@@ -1,3 +1,15 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [SampleDataRow.cs](./CS/App_Code/SampleDataRow.cs) (VB: [SampleDataRow.vb](./VB/App_Code/SampleDataRow.vb))
+* [SampleDataSource.cs](./CS/App_Code/SampleDataSource.cs) (VB: [SampleDataSource.vb](./VB/App_Code/SampleDataSource.vb))
+* [BatchEdit.aspx](./CS/BatchEdit.aspx) (VB: [BatchEdit.aspx.vb](./VB/BatchEdit.aspx.vb))
+* [BatchEdit.aspx.cs](./CS/BatchEdit.aspx.cs) (VB: [BatchEdit.aspx.vb](./VB/BatchEdit.aspx.vb))
+* [DataItemTemplate.aspx](./CS/DataItemTemplate.aspx) (VB: [DataItemTemplate.aspx.vb](./VB/DataItemTemplate.aspx.vb))
+* [DataItemTemplate.aspx.cs](./CS/DataItemTemplate.aspx.cs) (VB: [DataItemTemplate.aspx.vb](./VB/DataItemTemplate.aspx.vb))
+* **[Default.aspx](./CS/Default.aspx) (VB: [Default.aspx.vb](./VB/Default.aspx.vb))**
+* [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/Default.aspx.vb))
+<!-- default file list end -->
 # ASPxGridView - How to select a checkbox in a row if DataItemTemplate or BatchEdit is used
 
 
