@@ -11,6 +11,9 @@
 * [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/Default.aspx.vb))
 <!-- default file list end -->
 # ASPxGridView - How to select a checkbox in a row if DataItemTemplate or BatchEdit is used
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/t328305/)**
+<!-- run online end -->
 
 
 <p>This example illustrates how to select a single check box when the DataItemTemplate or Batch Editing is used in ASPxGridView.<br><br><strong>Batch Editing mode</strong></p>
