@@ -5,7 +5,7 @@
 <!-- default badges end -->
 # Grid View for ASP.NET Web Forms - How to select a checkbox in a row when a data item template or batch edit mode is applied
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t328305/)**
+**[[Run Online]](https://codecentral.devexpress.com/128535289/)**
 <!-- run online end -->
 
 This example demonstrates how to configure the grid's cell edit functionality to select a single checkbox in a row.
