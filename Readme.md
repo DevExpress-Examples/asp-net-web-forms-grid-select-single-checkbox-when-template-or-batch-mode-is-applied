@@ -3,13 +3,13 @@
 **[[Run Online]](https://codecentral.devexpress.com/t328305/)**
 <!-- run online end -->
 
-This example demonstrates how to configure the grid's cell edit functionality to select a single check box in a row.
+This example demonstrates how to configure the grid's cell edit functionality to select a single checkbox in a row.
 
 ## Batch Edit Mode
 
 ![Batch edit mode](batchEditMode.gif)
 
-Handle the grid's server-side [CellEditorInitialize](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.CellEditorInitialize) event to initialize a check box editor and add the editor's client-side [CheckedChanged](https://docs.devexpress.com/AspNet/js-ASPxClientCheckBox.CheckedChanged) event handler. In that handler, use the grid's [batchEditApi.SetCellValue](https://docs.devexpress.com/AspNet/js-ASPxClientGridViewBatchEditApi.SetCellValue(visibleIndex-columnFieldNameOrId-value)) method to change a check box state. To indicate the updated cell, handle the grid's client-side [BatchEditStartEditing](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.BatchEditStartEditing) event and use its [focusedColumn](https://docs.devexpress.com/AspNet/js-ASPxClientGridViewBatchEditStartEditingEventArgs.focusedColumn) and [visibleIndex](https://docs.devexpress.com/AspNet/js-ASPxClientGridViewBatchEditStartEditingEventArgs.visibleIndex) argument properties.
+Handle the grid's server-side [CellEditorInitialize](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.CellEditorInitialize) event to initialize a checkbox editor and add the editor's client-side [CheckedChanged](https://docs.devexpress.com/AspNet/js-ASPxClientCheckBox.CheckedChanged) event handler. In that handler, use the grid's [batchEditApi.SetCellValue](https://docs.devexpress.com/AspNet/js-ASPxClientGridViewBatchEditApi.SetCellValue(visibleIndex-columnFieldNameOrId-value)) method to change a checkbox state. To indicate the updated cell, handle the grid's client-side [BatchEditStartEditing](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.BatchEditStartEditing) event and use its [focusedColumn](https://docs.devexpress.com/AspNet/js-ASPxClientGridViewBatchEditStartEditingEventArgs.focusedColumn) and [visibleIndex](https://docs.devexpress.com/AspNet/js-ASPxClientGridViewBatchEditStartEditingEventArgs.visibleIndex) argument properties.
 
 ```js
 var rowIndex;
@@ -52,7 +52,7 @@ protected void ASPxGridView1_CellEditorInitialize(object sender, DevExpress.Web.
 
 ![Data item template](dataItemTemplate.gif)
 
-Specify a column's [DataItemTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.DataItemTemplate) property and add a check box editor to the template. Handle the editor's server-side `Init` event and add a [CheckedChanged](https://docs.devexpress.com/AspNet/js-ASPxClientCheckBox.CheckedChanged) event handler. In the handler, get a check box state, send a callback to the server, and pass the check box state as a parameter. In the grid's server-side [CustomCallback](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.CustomCallback) event handler, check or unchech check boxes and save their states to the grid's data source.
+Specify a column's [DataItemTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.DataItemTemplate) property and add a checkbox editor to the template. Handle the editor's server-side `Init` event and add a [CheckedChanged](https://docs.devexpress.com/AspNet/js-ASPxClientCheckBox.CheckedChanged) event handler. In the handler, get a checkbox state, send a callback to the server, and pass the checkbox state as a parameter. In the grid's server-side [CustomCallback](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.CustomCallback) event handler, check or uncheck checkboxes and save their states to the grid's data source.
 
 ```aspx
 <dx:ASPxGridView ID="ASPxGridView1" runat="server" ClientInstanceName="grid" KeyFieldName = "Id"
