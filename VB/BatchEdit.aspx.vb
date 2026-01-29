@@ -42,8 +42,8 @@ Partial Public Class BatchEdit
 
 	Protected Function UpdateItem(ByVal keys As OrderedDictionary, ByVal newValues As OrderedDictionary) As SampleDataRow
 'INSTANT VB NOTE: The variable id was renamed since Visual Basic does not handle local variables named the same as class members well:
-		Dim id_Renamed As Integer = Convert.ToInt32(keys("Id"))
-		Dim rowToUpdate As SampleDataRow = ListSource.Find(Function(i) i.Id = id_Renamed)
+		Dim id_Conflict As Integer = Convert.ToInt32(keys("Id"))
+		Dim rowToUpdate As SampleDataRow = ListSource.Find(Function(i) i.Id = id_Conflict)
 		rowToUpdate.Id = Convert.ToInt32(newValues("Id"))
 		rowToUpdate.Field1 = Convert.ToBoolean(newValues("Field1"))
 		rowToUpdate.Field2 = Convert.ToBoolean(newValues("Field2"))

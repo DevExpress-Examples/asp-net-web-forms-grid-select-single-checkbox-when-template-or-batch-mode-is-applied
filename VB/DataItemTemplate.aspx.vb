@@ -41,11 +41,11 @@ Partial Public Class DataItemTemplate
 		Dim rowWithResetFields As New SampleDataRow()
 		rowWithResetFields.Id = Convert.ToInt32(keyValue)
 		For i As Integer = 0 To ASPxGridView1.Columns.Count - 1
-			If (Not isChecked) OrElse String.Equals(ASPxGridView1.DataColumns(i).FieldName, fieldName) Then
+			If Not isChecked OrElse String.Equals(ASPxGridView1.DataColumns(i).FieldName, fieldName) Then
 				SetFields(rowWithResetFields, ASPxGridView1.DataColumns(i).FieldName, isChecked)
 			Else
-                SetFields(rowWithResetFields, ASPxGridView1.DataColumns(i).FieldName, Not isChecked)
-            End If
+				SetFields(rowWithResetFields, ASPxGridView1.DataColumns(i).FieldName, Not isChecked)
+			End If
 		Next i
 		Dim findRow As SampleDataRow = TryCast(ListSource.Find(Function(r) r.Id = rowWithResetFields.Id), SampleDataRow)
 		findRow.Field1 = rowWithResetFields.Field1
